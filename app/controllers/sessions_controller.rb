@@ -8,15 +8,7 @@ class SessionsController < ApplicationController
     reset_session
     @user = User.find_by(email: session_params[:email])
 
-    if @user && @user.authenticate(session_params[:password])
-      if @user.email_confirmed
-          sign_in user
-          redirect_back_or user
-      else
-        flash.now[:error] = 'Please activate your account by following the 
-        instructions in the account confirmation email you received to proceed'
-        render 'new'
-      end
+    if @user && @user.authenticate(session_params[:password])     
         session[:user_id] = @user.id          
     else
       flash[:error] = 'Invalid email or password!'
