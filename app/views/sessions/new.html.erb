@@ -1,0 +1,33 @@
+  <title>Jam</title>
+<div class="new">
+        <br> <br> <br> <br> <br> <br>
+      <h1>Hello User!</h1>
+
+      <p>Please log in to continue.</p>
+
+    <%- if flash[:error] %>
+      <div class='alert alert-danger'><%= flash[:error] %></div>
+    <% end %>
+
+    <%= form_for :session, url: sessions_path do |f| %>
+      <div class='form-group'>
+        <%= f.label :email %> 
+          <br>
+        <%= f.email_field :email, class: 'form-control' %>
+      </div>
+        <br>
+      <div class='form-group'>
+        <%= f.label :password %> 
+          <br>
+        <%= f.password_field :password, class: 'form-control' %>
+      </div>
+      <div class='form-group'>
+        <br> <br>
+        <%= f.submit 'Log In', class: 'btn btn-primary' %>
+      </div>
+    <% end %>
+
+    <p class='a'>
+      New User? <%= link_to 'Click here to create an account.', new_user_path %>
+    </p>
+</div>

@@ -1,0 +1,194 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ body
+ {
+ 	margin: 0px;
+ }
+.new
+{
+	height:100vh;
+	width: 100%;
+	background-color: darkgrey;
+	margin: auto;
+	text-align: center;
+}
+
+.new .a
+{
+	color: black;
+	font-size: 25px;
+}
+.new a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+}
+.new input#session_password, input#session_email
+{
+	width: 300px;
+	height: 50px;
+}
+
+.new label
+{
+	font-size: 30px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.new  input, button
+{
+	width: 150px;
+	font-size: 20px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background-color: lightgrey;
+	border-style: none;
+}
+
+.new p
+{
+	font-size: 40px;
+}
+
+.new h1
+{
+	font-size: 80px;
+	color: white;
+}
+
+.alert
+{
+	color: red;
+	font-size: 30px;
+}
+
+.user_new
+{
+	height:100vh;
+	width: 100%;
+	background-color: darkgrey;
+	margin: auto;
+	text-align: center;
+}
+
+.user_new h1
+{
+	font-size: 80px;
+	color: white;
+}
+
+.user_new input, button
+{
+	width: 150px;
+	font-size: 20px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background-color: lightgrey;
+	border-style: none;
+}
+
+.user_new input#user_password, input#user_email, input#user_password_confirmation
+{
+	width: 300px;
+	height: 50px;
+}
+
+.user_new label
+{
+	font-size: 30px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.user_new a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+}
+
+.user_new .mt-2
+{
+	color: black;
+	font-size: 25px;
+}
+
+.dashboard
+{
+	height:100vh;
+	width: 100%;
+	background-color: darkgrey;
+	margin: auto;
+	text-align: center;
+}
+
+.dashboard h1 
+{
+	font-size: 80px;
+	color: white;
+	margin: 10px;
+}
+
+.dashboard p
+{
+	font-size: 40px;
+}
+
+.dashboard a 
+{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+}
+
+.logout_button
+{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	height: 50px;
+	margin: auto;
+}
+
+.dashboard .chat
+{
+	margin: auto;
+ 	width: 60%;
+ 	background-color: lightgrey;
+ 	height: 65vh;
+ 	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
