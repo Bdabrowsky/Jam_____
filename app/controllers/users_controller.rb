@@ -2,6 +2,9 @@ class UsersController < ApplicationController
   skip_before_action :require_valid_user!
   before_action :reset_session
 
+    def user_params
+        params.require(:user).permit(:email, :password, :password_confirmation)
+    end
   def new
     @user = User.new
   end
@@ -22,9 +25,5 @@ class UsersController < ApplicationController
     end
 
   end
-
-
-  def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
-  end
+  
 end
