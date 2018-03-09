@@ -15,8 +15,6 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
 
-      UserMailer.registration_confirmation(@user).deliver
-
       flash[:success] =  'You have successfully created an account! Please confirm email.'
 
       redirect_to root_path
@@ -25,5 +23,5 @@ class UsersController < ApplicationController
     end
 
   end
-  
+
 end
