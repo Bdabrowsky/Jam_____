@@ -1,7 +1,8 @@
-class App < ActiveRecord::Migration[5.1]
+class Users  < ActiveRecord::Migration[5.1]
   def change
-  	create_table "users", force: :cascade do |t|
-      t.string "name"
-      t.string "password_digest"
+  	create_table :users  do |t|
+      t.string :name
+      t.string :password_digest
+      t.timestamps null: false
   end
 end
