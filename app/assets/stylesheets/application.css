@@ -19,7 +19,7 @@
  }
 .new
 {
-	height:100vh;
+	height:100%;
 	width: 100%;
 	background-color: darkgrey;
 	margin: auto;
@@ -81,7 +81,7 @@
 
 .user_new
 {
-	height:100vh;
+	height:100%;
 	width: 100%;
 	background-color: darkgrey;
 	margin: auto;
@@ -134,7 +134,7 @@
 
 .dashboard
 {
-	height:100vh;
+	height:100%;
 	width: 100%;
 	background-color: darkgrey;
 	margin: auto;
